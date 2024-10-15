@@ -1,0 +1,5 @@
+com/BankofKazakhstan/CreditScore/Repository/CreditScoreRep.class
+com/BankofKazakhstan/CreditScore/Entity/CreditScoreEntity.class
+com/BankofKazakhstan/CreditScore/Controller/CreditScoreController.class
+com/BankofKazakhstan/CreditScore/Services/CreditScoreServ.class
+com/BankofKazakhstan/CreditScore/CreditScoreApplication.class

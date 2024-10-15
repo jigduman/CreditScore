@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: ADMIN-SERVICE
+  datasource:
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    properties:
+      open-in-view: false
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: create
+  cloud:
+    discovery:
+      enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone : ${EUREKA_SERVER_URL}
+  instance:
+    prefer-ip-address: false
+server:
+  port: 8083
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    web:
+      exposure:
+        include: "*"
+    health:
+      show-details: always
